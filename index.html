@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>10S Q2 SW1</title>
+</head>
+<body>
+
+    <!-- Container for my content -->
+    <div class="content-box">
+
+        <h1>East Asia Nickname Atlas</h1>
+
+        <p>Choose an East Asian country to find its nickname.</p>
+
+        <!-- Dropdown menu for selecting a country -->
+        <select id="country">
+            <option value="">Choose a country</option>
+            <option value="China">China</option>
+            <option value="Japan">Japan</option>
+            <option value="South Korea">South Korea</option>
+            <option value="North Korea">North Korea</option>
+            <option value="Mongolia">Mongolia</option>
+            <option value="Taiwan">Taiwan</option>
+        </select>
+
+        <!-- Button to trigger the nickname display -->
+        <button py-click="show_nn">
+            Show Nickname
+        </button>
+
+        <!-- this is where the nickname will appear -->
+        <p id="result"></p>
+
+        <footer>
+            <p>ICT Q2 SW1 | East Asia Nickname Atlas</p>
+            <p>Frances Andrea D. Torculas 10-Sapphire</p>
+        </footer>
+    </div>
+    
+
+
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>

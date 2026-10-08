@@ -1,0 +1,93 @@
+/* font and background of my webpage */
+body {
+    font-family: Georgia, serif;
+    background-color: #f3e6c8;
+
+    /* this is for my background image */
+    background-image: url("https://i.pinimg.com/736x/95/67/4a/95674a83461a68b1c364682d8ff8a0a0.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #29221c;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Style for the main heading */
+h1 {
+    background-color: #4f0d12;
+    color: #d9a441;
+    padding: 35px;
+    margin: 0;
+    font-size: 38px;
+}
+
+
+/* Create a container for the country selector */
+.content-box {
+    background-color: rgba(243, 230, 200, 0.92);
+    width: 600px;
+    margin: auto;
+    padding: 30px;
+    border: 3px solid #9b792e;
+}
+
+
+/* Style for the instructions */
+.content-box p {
+    font-size: 17px;
+}
+
+
+/* Style for the country dropdown thingy */
+select {
+    padding: 12px;
+    width: 260px;
+    background-color: #fffaf0;
+    border: 2px solid #9b792e;
+    font-size: 15px;
+}
+
+
+/* Style the nickname button */
+button {
+    padding: 12px 18px;
+    background-color: #4f0d12;
+    color: white;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+/* Change the button color when the mouse is over it */
+button:hover {
+    background-color: #524019;
+}
+
+
+/* Style for the displayed nickname */
+#result {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3b0a0d;
+    margin: 30px;
+}
+
+
+/* Style for the footer */
+footer {
+    background-color: rgba(87, 73, 61, 0.95);
+    color: #f3e6c8;
+    padding: 12px;
+    margin-top: 10px;
+}
+
+/* Style for the text inside the footer */
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
