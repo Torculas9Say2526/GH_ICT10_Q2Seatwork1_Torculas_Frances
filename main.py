@@ -1,25 +1,44 @@
+# Working with Python Lists
 from pyscript import document
 
-# Nicknames of East Asian countries
-nicknames = {
-    "China": "The Middle Kingdom",
-    "Japan": "The Land of the Rising Sun",
-    "South Korea": "The Land of the Morning Calm",
-    "North Korea": "The Hermit Kingdom",
-    "Mongolia": "The Land of the Eternal Blue Sky",
-    "Taiwan": "The Beautiful Island"
-}
 
+# List of East Asian countries
+countries = [
+    "China",
+    "Japan",
+    "South Korea",
+    "North Korea",
+    "Mongolia",
+    "Taiwan"
+]
 
-def show_nn(event):
-    # Getting the selected country
+# List of nicknames matching each country
+nicknames = [
+    "The Middle Kingdom",
+    "The Land of the Rising Sun",
+    "The Land of the Morning Calm",
+    "The Hermit Kingdom",
+    "The Land of the Eternal Blue Sky",
+    "The Beautiful Island"
+]
+
+def show_nn(e):
+    # Get the selected country
     country = document.getElementById("country").value
 
-    # Finding the nickname
-    if country in nicknames:
-        nickname = nicknames[country]
-    else:
-        nickname = "Please choose a country."
+    # Check if a country was selected
+    if country in countries:
 
-    # Displaying the nickname
-    document.getElementById("result").innerHTML = nickname
+        # Find the position of the country
+        index = countries.index(country)
+
+        # Get the matching nickname
+        nickname = nicknames[index]
+
+        # Display the nickname
+        document.getElementById("result").innerHTML = nickname
+
+    else:
+
+        # Display a message if no country was selected
+        document.getElementById("result").innerHTML = "Please choose a country."
