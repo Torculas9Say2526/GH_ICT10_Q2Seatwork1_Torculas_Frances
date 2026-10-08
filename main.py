@@ -1,26 +1,11 @@
-# Working with Python Lists
 from pyscript import document
 
 
 # List of East Asian countries
-countries = [
-    "China",
-    "Japan",
-    "South Korea",
-    "North Korea",
-    "Mongolia",
-    "Taiwan"
-]
+countries = ["China","Japan","South Korea","North Korea","Mongolia","Taiwan"]
 
 # List of nicknames matching each country
-nicknames = [
-    "The Middle Kingdom",
-    "The Land of the Rising Sun",
-    "The Land of the Morning Calm",
-    "The Hermit Kingdom",
-    "The Land of the Eternal Blue Sky",
-    "The Beautiful Island"
-]
+nicknames = ["The Middle Kingdom", "The Land of the Rising Sun", "The Land of the Morning Calm", "The Hermit Kingdom", "The Land of the Eternal Blue Sky","The Beautiful Island"]
 
 def show_nn(e):
     # Get the selected country
